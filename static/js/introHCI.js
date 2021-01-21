@@ -29,8 +29,6 @@ function projectClick(e) {
 
   var containingProject = $(this).closest(".project");
     var description = $(containingProject).find(".project-description");
-    console.log("description length ");
-    console.log(description.length);
     if (description.length == 0) {
        $(containingProject).append("<div class='project-description'><p>Description of the project.</p></div>");
     } else {
